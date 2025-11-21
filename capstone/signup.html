@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Login - Foodify</title>
+<title>Sign Up - Foodify</title>
 <style>
   html, body {
     height: 100%;
@@ -19,26 +19,26 @@
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('https://thumbs.dreamstime.com/b/cute-cartoon-style-fast-food-items-faces-arranged-grid-pattern-bright-playful-colors-create-lively-appearance-include-401352354.jpg');
+    background-image: url('https://media.istockphoto.com/id/908663850/photo/various-fast-food-products.jpg?s=612x612&w=0&k=20&c=8uGF9iSmuMPHTghrIu1FR6m1a1Y6qPrvLZQYuTDcoaY=');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: brightness(0.75);
     z-index: -2;
   }
-
   .overlay {
     position: fixed;
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.35);
     z-index: -1;
   }
-  .login-container {
+  .signup-container {
     position: relative;
     max-width: 320px;
     margin: 8% auto;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 40px 30px;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
@@ -50,6 +50,7 @@
     color: #333;
   }
   input[type="text"],
+  input[type="email"],
   input[type="password"] {
     width: 100%;
     padding: 12px 15px;
@@ -62,7 +63,7 @@
   button {
     width: 100%;
     padding: 14px 15px;
-    background-color: #7aff33;
+    background-color: #33ff70;
     color: white;
     border: none;
     border-radius: 8px;
@@ -71,7 +72,7 @@
     margin-top: 20px;
   }
   button:hover {
-    background-color: #2fe0d1;
+    background-color: #8de66f;
   }
 </style>
 </head>
@@ -80,12 +81,13 @@
 <div class="bg-image"></div>
 <div class="overlay"></div>
 
-<div class="login-container">
-  <h2>Login to Foodify</h2>
-  <form action="index1.html" method="GET">
-    <input type="text" placeholder="Email or Username" name="username" required />
+<div class="signup-container">
+  <h2>Create Account</h2>
+  <form action="login.html" method="GET">
+    <input type="text" placeholder="Full Name" name="fullname" required />
+    <input type="email" placeholder="Email Address" name="email" required />
     <input type="password" placeholder="Password" name="password" required />
-    <button type="submit">Login</button>
+    <button type="submit">Sign Up</button>
   </form>
 </div>
 
