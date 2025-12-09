@@ -34,7 +34,7 @@ a:hover {
     width: 180px;
 
 }
-.search {
+#search {
     background-color: honeydew;
     height: 30px;
     align-items: center;
@@ -43,7 +43,7 @@ a:hover {
     padding: 30px;
    
 }
-.search input {
+#search input {
     color: rgb(126, 135, 114);
     width: 300px;
     height: 40px;
@@ -51,7 +51,7 @@ a:hover {
     border-radius: 8px;
     border: 1px solid black;
 }
-.search button {
+#search button {
     background-color: rgb(161, 236, 181);
     color: black;
     width: 140px;
@@ -151,9 +151,10 @@ a:hover {
     transition: transform 0.3s ease ;
 
 }
-.top1:hover{
+.top1:hover {
     transform: scale(1.2);
 }
+
 .t1 {
     font-size: 24px;
     font-family: cursive;
