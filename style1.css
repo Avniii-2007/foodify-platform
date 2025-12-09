@@ -114,12 +114,12 @@ a:hover {
     background-color: rgb(239, 255, 214);
     padding: 10px;
     box-shadow: 0 1px 5px 0 ;
+    transition: transform 0.3s ease ;
 }
 .options:hover {
-    height: 25px;
-    width: auto;
     cursor: pointer;
     background-color: azure;
+    transform: scale(1.2);
 }
 #recommended{ 
     color: grey;
@@ -148,6 +148,11 @@ a:hover {
     border-radius: 14px;
     background-color: rgb(218, 246, 203);
     padding: 20px;
+    transition: transform 0.3s ease ;
+
+}
+.top1:hover{
+    transform: scale(1.2);
 }
 .t1 {
     font-size: 24px;
